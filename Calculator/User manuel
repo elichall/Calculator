@@ -1,0 +1,49 @@
+Calculator user manuel
+
+General
+ 
+- Absolute referencing
+    A function or variable can be absolutely referenced by placing a $ in front of it. 
+    Then the expression will be defined in terms of the value of the variable or function at that given time.
+    Otherwise if the internal variable or function is changed the value of the experession with the internal var or funct will also change.
+
+User Functions
+
+- This notation designates a Function
+    f{x,y,z}=xyz
+- To evaluate input the value of x, y, and z in the same format
+    f{1,2,3} 
+- To iterate through an array, input a vector or an array as an argument.
+    If multiple arguments are arrays then they must have the same dimensions 
+- Evaluate your expressions before inputing them as arguments otherwise issues might occur
+
+Matrix
+
+- Example
+    [1,2,3;4,5,6]
+    rows space by ; and columns by ,
+- Where a and b are Matrix
+    a*b gives element by element opperations
+    a.*b gives linear algebra multiplication
+- To index a matrix use A.(n,m) where n and m are rows and columns 0 indexed
+
+Overwriting function names is possible but not recommended
+
+Graphing
+
+- You can define new functions and variables in the graphing input field however only the functions will be graphed, the vars will just be added to the vars window
+- To graph a constant var just input it alone into the field
+- A previously defined function of one variable can be entered into the graph by just typing the name of the function without anything else
+    If the arguments of the function are included, then it will enter not as its own function but as a y= function
+- A function of more than one varaible can be graphed if the other variable is passed as an evaluateable input
+- If a function is defined in terms of variables, then changing the variables will change the function accordingly (unless absolutely referenced)
+    Same for a function which is in terms of another function
+
+Symbolic functions
+
+- Various functions are delt with symbolically and can be later evaluated numarially
+- For these functions, parameters have to be passed which will be listed in the functions index 
+    If it is a diff, int, or lim, x is the default and does not have to be passed as an arg. 
+- any symbols/variables defined or undefined will be treated as constants, unless it is the passed argument
+- best practices
+    put all e^ in brackets
